@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UrbanSchedulerProject.App.GoogleMaps" Collapsed="true">
+    <Position X="37.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAAAAJgAQAABAAAAAAAKAAAA=</HashCode>
+      <FileName>App\GoogleMaps.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Default" Collapsed="true">
+    <Position X="34" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAIAAIAACAAAAEIACAAAAAAAAAAAKAAAA=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.Building">
+    <Position X="13.25" Y="1.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.Building.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Building.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAIDEAAKBNRgIQKJQJFIGBgKNCoAApQgGCAIBAUycBA=</HashCode>
+      <FileName>Entities\Building.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.Files">
+    <Position X="8.5" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.Files.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Files.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CICCUoGCADQAASLIQClAgBAIBiAEAQAACKAABAAQEBQ=</HashCode>
+      <FileName>Entities\Files.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.Room">
+    <Position X="22" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.Room.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Room.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BACiGQQQBoQRAcKIREFBAjgARigEAABgCDAhJARYABA=</HashCode>
+      <FileName>Entities\Room.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomAvailability">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomAvailability.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomAvailability.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAECECBiIAQBIQKoYBFAABAoNiAgAkAgSCGAIAQWQTA=</HashCode>
+      <FileName>Entities\RoomAvailability.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomComments">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomComments.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomComments.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAADEgBCEAQAIwqJQBFAABgANCgAAoAACCAAEAQSIBA=</HashCode>
+      <FileName>Entities\RoomComments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomImageLink">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomImageLink.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomImageLink.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>KAACEAIDIYSAIUKIQBFDABAAFCBAAhAACCAABAYaAVQ=</HashCode>
+      <FileName>Entities\RoomImageLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomImageType">
+    <Position X="6" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomImageType.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomImageType.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACMQAAAAQBAQKIQAFAADQABCAAQAAACCABAAAQABA=</HashCode>
+      <FileName>Entities\RoomImageType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomReservation">
+    <Position X="16" Y="1.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomReservation.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomReservation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CgECEiBCMAQRIQKrYBFAABAodmJgAkAgCCGAAAUSxTg=</HashCode>
+      <FileName>Entities\RoomReservation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomReservationComments">
+    <Position X="24.5" Y="1.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomReservationComments.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomReservationComments.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAADEABAEARAAQbJQAFAABgAJCgAIIAQCCAAEAQQIBI=</HashCode>
+      <FileName>Entities\RoomReservationComments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomType">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.RoomType.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\RoomType.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACMAAAAAQAAQKIQAFAIBQABCAAQAAACCAACAAQoBA=</HashCode>
+      <FileName>Entities\RoomType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.User">
+    <Position X="19" Y="1.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Urban.Data.User.Metadata" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\User.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAEDEkBQACQQAYOKVDFAQBhADGIAAABQCCQAIAHQAZk=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.LinqEntityBase" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABAAAACAIAAAAAAAABiAAAAAAEAAAAAAAAAgA=</HashCode>
+      <FileName>LinqEntityBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.BuildingManager" Collapsed="true">
+    <Position X="32.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAABCEBAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\BuildingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.FilesManager" Collapsed="true">
+    <Position X="35.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\FilesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomAvailabilityManager" Collapsed="true">
+    <Position X="32.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEBAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomAvailabilityManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomCommentsManager" Collapsed="true">
+    <Position X="34" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAABCEBAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomCommentsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomImageLinkManager" Collapsed="true">
+    <Position X="35.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAAAAAgAAAAAAAABAAAAAACEBAAAAAAAACAAIAAA=</HashCode>
+      <FileName>Managers\RoomImageLinkManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomImageTypeManager" Collapsed="true">
+    <Position X="37.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomImageTypeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomManager" Collapsed="true">
+    <Position X="32.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAABA=</HashCode>
+      <FileName>Managers\RoomManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomReservationCommentsManager" Collapsed="true">
+    <Position X="34" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAABCEAAAACAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomReservationCommentsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomReservationManager" Collapsed="true">
+    <Position X="35.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEBAAAAAAAACAAIAAA=</HashCode>
+      <FileName>Managers\RoomReservationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomTypeManager" Collapsed="true">
+    <Position X="37.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomTypeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.UrbanDataManager" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAADDBAAAAAAAAAAEBAAAAAhJAEAA0AgAAIBAAAAAIE=</HashCode>
+      <FileName>Managers\UrbanDataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.UserManager" Collapsed="true">
+    <Position X="35.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAgABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\UserManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.UrbanDataContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JBCjAjAggBpwpjAkkhgIGQOwISAIRAC4gCJGEA7AMMs=</HashCode>
+      <FileName>UrbanDataContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.AppointmentObj" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAIAABDAAACAAIIAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Classes\AppointmentObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

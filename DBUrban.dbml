@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Database Name="NateUrbanScheduler" EntityNamespace="Urban.Data" ContextNamespace="Urban.Data" Class="UrbanDataContext" EntityBase="LinqEntityBase" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+    <Connection Mode="WebSettings" ConnectionString="Data Source=strazzdev;Initial Catalog=NateUrbanScheduler;Integrated Security=True;Connect Timeout=30;Encrypt=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="UrbanConnectionString" Provider="System.Data.SqlClient" />
+    <Table Name="dbo.Building" Member="Building">
+        <Type Name="Building">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="UserID" Storage="_userID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="Name" Storage="_name" Type="System.String" DbType="nvarchar(250)" CanBeNull="true" />
+            <Column Name="PrimaryAddress" Storage="_primaryAddress" Type="System.String" DbType="nvarchar(150) NOT NULL" CanBeNull="false" />
+            <Column Name="SecondaryAddress" Storage="_secondaryAddress" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="City" Storage="_city" Type="System.String" DbType="nvarchar(150) NOT NULL" CanBeNull="false" />
+            <Column Name="State" Storage="_state" Type="System.String" DbType="nvarchar(150) NOT NULL" CanBeNull="false" />
+            <Column Name="Longitude" Storage="_longitude" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="Latitude" Storage="_latitude" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="Zip" Storage="_zip" Type="System.String" DbType="nvarchar(150) NOT NULL" CanBeNull="false" />
+            <Column Name="HasMoreThanOneRoom" Storage="_hasMoreThanOneRoom" Type="System.Boolean" DbType="bit NOT NULL" CanBeNull="false" />
+            <Association Name="Building_Room" Member="RoomList" Storage="_roomList" ThisKey="Id" OtherKey="BuildingID" Type="Room" DeleteOnNull="false" />
+            <Association Name="User_Building" Member="User" Storage="_user" ThisKey="UserID" OtherKey="Id" Type="User" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.Files" Member="Files">
+        <Type Name="Files">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="FilesName" Storage="_filesName" Type="System.String" DbType="nvarchar(500)" CanBeNull="true" />
+            <Column Name="Extension" Storage="_extension" Type="System.String" DbType="nvarchar(50)" CanBeNull="true" />
+            <Column Name="ServerFileName" Storage="_serverFileName" Type="System.String" DbType="nvarchar(200)" CanBeNull="true" />
+            <Column Name="FileSize" Storage="_fileSize" Type="System.Int32" DbType="int" CanBeNull="true" />
+            <Column Name="FileType" Storage="_fileType" Type="System.String" DbType="nvarchar(50)" CanBeNull="true" />
+            <Column Name="FileSubType" Storage="_fileSubType" Type="System.String" DbType="nvarchar(50)" CanBeNull="true" />
+            <Association Name="Files_RoomImageLink" Member="FileRoomImageLinkList" Storage="_fileRoomImageLinkList" ThisKey="Id" OtherKey="FileID" Type="RoomImageLink" DeleteOnNull="false" />
+        </Type>
+    </Table>
+    <Table Name="dbo.Room" Member="Room">
+        <Type Name="Room">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="UserID" Storage="_userID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="BuildingID" Storage="_buildingID" Type="System.Int32" DbType="int" CanBeNull="true" />
+            <Column Name="RoomTypeID" Storage="_roomTypeID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="Number" Storage="_number" Type="System.String" DbType="nvarchar(50) NOT NULL" CanBeNull="false" />
+            <Column Name="MaxOccupancy" Storage="_maxOccupancy" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="Title" Storage="_title" Type="System.String" DbType="nvarchar(100) NOT NULL" CanBeNull="false" />
+            <Column Name="Description" Storage="_description" Type="System.String" DbType="nvarchar(MAX)" CanBeNull="true" />
+            <Association Name="Room_RoomAvailability" Member="RoomAvailabilityList" Storage="_roomAvailabilityList" ThisKey="Id" OtherKey="RoomID" Type="RoomAvailability" DeleteOnNull="false" />
+            <Association Name="Room_RoomComments" Member="RoomCommentsList" Storage="_roomCommentsList" ThisKey="Id" OtherKey="RoomID" Type="RoomComments" DeleteOnNull="false" />
+            <Association Name="Room_RoomImageLink" Member="RoomImageLinkList" Storage="_roomImageLinkList" ThisKey="Id" OtherKey="RoomID" Type="RoomImageLink" DeleteOnNull="false" />
+            <Association Name="Room_RoomReservation" Member="RoomReservationList" Storage="_roomReservationList" ThisKey="Id" OtherKey="RoomID" Type="RoomReservation" DeleteOnNull="false" />
+            <Association Name="Building_Room" Member="Building" Storage="_building" ThisKey="BuildingID" OtherKey="Id" Type="Building" IsForeignKey="true" />
+            <Association Name="RoomType_Room" Member="RoomType" Storage="_roomType" ThisKey="RoomTypeID" OtherKey="Id" Type="RoomType" IsForeignKey="true" />
+            <Association Name="User_Room" Member="User" Storage="_user" ThisKey="Id" OtherKey="Id" Type="User" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomAvailability" Member="RoomAvailability">
+        <Type Name="RoomAvailability">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="RoomID" Storage="_roomID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="Days" Storage="_days" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="StartDate" Storage="_startDate" Type="System.DateTime" DbType="date NOT NULL" CanBeNull="false" />
+            <Column Name="EndDate" Storage="_endDate" Type="System.DateTime" DbType="date" CanBeNull="true" />
+            <Column Name="StartTime" Storage="_startTime" Type="System.TimeSpan" DbType="time NOT NULL" CanBeNull="false" />
+            <Column Name="EndTime" Storage="_endTime" Type="System.TimeSpan" DbType="time NOT NULL" CanBeNull="false" />
+            <Column Name="AllDay" Storage="_allDay" Type="System.Boolean" DbType="bit" CanBeNull="true" />
+            <Association Name="Room_RoomAvailability" Member="Room" Storage="_room" ThisKey="RoomID" OtherKey="Id" Type="Room" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomComments" Member="RoomComments">
+        <Type Name="RoomComments">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="Comments" Storage="_comments" Type="System.String" DbType="nvarchar(MAX)" CanBeNull="true" />
+            <Column Name="Score" Storage="_score" Type="System.Decimal" DbType="decimal(18,2)" CanBeNull="true" />
+            <Column Name="RoomID" Storage="_roomID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="UserID" Storage="_userID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="DatePosted" Storage="_datePosted" Type="System.DateTime" DbType="datetime" CanBeNull="true" />
+            <Association Name="Room_RoomComments" Member="Room" Storage="_room" ThisKey="RoomID" OtherKey="Id" Type="Room" IsForeignKey="true" />
+            <Association Name="User_RoomComments" Member="User" Storage="_user" ThisKey="UserID" OtherKey="Id" Type="User" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomImageLink" Member="RoomImageLink">
+        <Type Name="RoomImageLink">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="FileID" Storage="_fileID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="RoomID" Storage="_roomID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="RoomImageType" Storage="_roomImageType" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="Title" Storage="_title" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="ImageDescription" Storage="_imageDescription" Type="System.String" DbType="nvarchar(MAX)" CanBeNull="true" />
+            <Association Name="Files_RoomImageLink" Member="FileFiles" Storage="_fileFiles" ThisKey="FileID" OtherKey="Id" Type="Files" IsForeignKey="true" />
+            <Association Name="Room_RoomImageLink" Member="Room" Storage="_room" ThisKey="RoomID" OtherKey="Id" Type="Room" IsForeignKey="true" />
+            <Association Name="RoomImageType_RoomImageLink" Member="RoomImageType1" Storage="_roomImageType1" ThisKey="RoomImageType" OtherKey="Id" Type="RoomImageType" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomImageType" Member="RoomImageType">
+        <Type Name="RoomImageType">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="Name" Storage="_name" Type="System.String" DbType="nchar(10)" CanBeNull="true" />
+            <Association Name="RoomImageType_RoomImageLink" Member="RoomImageLinkList" Storage="_roomImageLinkList" ThisKey="Id" OtherKey="RoomImageType" Type="RoomImageLink" DeleteOnNull="false" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomReservation" Member="RoomReservation">
+        <Type Name="RoomReservation">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="RoomID" Storage="_roomID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="ReserverUserID" Storage="_reserverUserID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="Approved" Storage="_approved" Type="System.Boolean" DbType="bit" CanBeNull="true" />
+            <Column Name="RequestedDate" Storage="_requestedDate" Type="System.DateTime" DbType="datetime" CanBeNull="true" />
+            <Association Name="RoomReservation_RoomReservationComments" Member="RoomReservationCommentsList" Storage="_roomReservationCommentsList" ThisKey="Id" OtherKey="RoomReservationID" Type="RoomReservationComments" DeleteOnNull="false" />
+            <Association Name="RoomReservation_RoomReservationDates" Member="RoomReservationDatesList" Storage="_roomReservationDatesList" ThisKey="Id" OtherKey="RoomReservationID" Type="RoomReservationDates" DeleteOnNull="false" />
+            <Association Name="Room_RoomReservation" Member="Room" Storage="_room" ThisKey="RoomID" OtherKey="Id" Type="Room" IsForeignKey="true" />
+            <Association Name="User_RoomReservation" Member="ReserverUser" Storage="_reserverUser" ThisKey="ReserverUserID" OtherKey="Id" Type="User" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomReservationComments" Member="RoomReservationComments">
+        <Type Name="RoomReservationComments">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="RoomReservationID" Storage="_roomReservationID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="UserID" Storage="_userID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="DateSent" Storage="_dateSent" Type="System.DateTime" DbType="datetime NOT NULL" CanBeNull="false" />
+            <Column Name="Comments" Storage="_comments" Type="System.String" DbType="nvarchar(MAX)" CanBeNull="true" />
+            <Association Name="RoomReservation_RoomReservationComments" Member="RoomReservation" Storage="_roomReservation" ThisKey="RoomReservationID" OtherKey="Id" Type="RoomReservation" IsForeignKey="true" />
+            <Association Name="User_RoomReservationComments" Member="User" Storage="_user" ThisKey="UserID" OtherKey="Id" Type="User" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomReservationDates" Member="RoomReservationDates">
+        <Type Name="RoomReservationDates">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="RoomReservationID" Storage="_roomReservationID" Type="System.Int32" DbType="int NOT NULL" CanBeNull="false" />
+            <Column Name="StartDate" Storage="_startDate" Type="System.DateTime" DbType="datetime NOT NULL" CanBeNull="false" />
+            <Column Name="EndDate" Storage="_endDate" Type="System.DateTime" DbType="datetime NOT NULL" CanBeNull="false" />
+            <Column Name="AllDay" Storage="_allDay" Type="System.Boolean" DbType="bit" CanBeNull="true" />
+            <Column Name="Approved" Storage="_approved" Type="System.Boolean" DbType="bit" CanBeNull="true" />
+            <Association Name="RoomReservation_RoomReservationDates" Member="RoomReservation" Storage="_roomReservation" ThisKey="RoomReservationID" OtherKey="Id" Type="RoomReservation" IsForeignKey="true" />
+        </Type>
+    </Table>
+    <Table Name="dbo.RoomType" Member="RoomType">
+        <Type Name="RoomType">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+            <Column Name="Name" Storage="_name" Type="System.String" DbType="nvarchar(250)" CanBeNull="true" />
+            <Association Name="RoomType_Room" Member="RoomList" Storage="_roomList" ThisKey="Id" OtherKey="RoomTypeID" Type="Room" DeleteOnNull="false" />
+        </Type>
+    </Table>
+    <Table Name="dbo.User" Member="User">
+        <Type Name="User">
+            <Column Name="ID" Member="Id" Storage="_id" Type="System.Int32" DbType="int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+            <Column Name="Email" Storage="_email" Type="System.String" DbType="nvarchar(MAX) NOT NULL" CanBeNull="false" />
+            <Column Name="IsUserAuthenticated" Storage="_isUserAuthenticated" Type="System.Boolean" DbType="bit" CanBeNull="true" />
+            <Column Name="IsAdmin" Storage="_isAdmin" Type="System.Boolean" DbType="bit NOT NULL" CanBeNull="false" />
+            <Column Name="FirstName" Storage="_firstName" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="LastName" Storage="_lastName" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="PhoneNumber" Storage="_phoneNumber" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="PrimaryAddress" Storage="_primaryAddress" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="SecondaryAddress" Storage="_secondaryAddress" Type="System.String" DbType="nvarchar(500)" CanBeNull="true" />
+            <Column Name="City" Storage="_city" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="Zip" Storage="_zip" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="UserName" Storage="_userName" Type="System.String" DbType="nvarchar(150)" CanBeNull="true" />
+            <Column Name="Password" Storage="_password" Type="System.String" DbType="nvarchar(200)" CanBeNull="true" />
+            <Column Name="PasswordSalt" Storage="_passwordSalt" Type="System.String" DbType="nvarchar(200)" CanBeNull="true" />
+            <Column Name="DateCreated" Storage="_dateCreated" Type="System.DateTime" DbType="datetime" CanBeNull="true" />
+            <Column Name="ActivationGuid" Storage="_activationGuid" Type="System.Guid" DbType="uniqueidentifier" CanBeNull="true" />
+            <Association Name="User_Building" Member="BuildingList" Storage="_buildingList" ThisKey="Id" OtherKey="UserID" Type="Building" DeleteOnNull="false" />
+            <Association Name="User_Room" Member="Room" Storage="_room" ThisKey="Id" OtherKey="Id" Type="Room" Cardinality="One" DeleteOnNull="false" />
+            <Association Name="User_RoomComments" Member="RoomCommentsList" Storage="_roomCommentsList" ThisKey="Id" OtherKey="UserID" Type="RoomComments" DeleteOnNull="false" />
+            <Association Name="User_RoomReservation" Member="ReserverRoomReservationList" Storage="_reserverRoomReservationList" ThisKey="Id" OtherKey="ReserverUserID" Type="RoomReservation" DeleteOnNull="false" />
+            <Association Name="User_RoomReservationComments" Member="RoomReservationCommentsList" Storage="_roomReservationCommentsList" ThisKey="Id" OtherKey="UserID" Type="RoomReservationComments" DeleteOnNull="false" />
+        </Type>
+    </Table>
+</Database>

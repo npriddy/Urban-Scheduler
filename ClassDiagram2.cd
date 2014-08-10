@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UrbanSchedulerProject.App.Pages.BuildingEdit" Collapsed="true">
+    <Position X="1.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAADAEACAAABAAAACCQkgAADAABAgMAICA=</HashCode>
+      <FileName>App\Pages\BuildingEdit.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.EditRoomDetails" Collapsed="true">
+    <Position X="6" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIgEBAgCQowAAAAMCAgADEDAQAAZHwQA4KBACAIEAgg=</HashCode>
+      <FileName>App\Pages\EditRoomDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.FindARoom" Collapsed="true">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAMAAACAAAEEAgIEIAAAAAAgAAgQAAAQgAAIAIAA=</HashCode>
+      <FileName>App\Pages\FindARoom.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.MyAccount" Collapsed="true">
+    <Position X="12.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBIAAACAoAAAAQAAQABAAAQAAAACRAQAAAQAZRAAE=</HashCode>
+      <FileName>App\Pages\MyAccount.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.PostARoom" Collapsed="true">
+    <Position X="15" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EoyABCAQQiQIDAEMAAgACUCAoKIAnQEgjmFAQkIGoik=</HashCode>
+      <FileName>App\Pages\PostARoom.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.RoomReservationPage" Collapsed="true">
+    <Position X="17.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAwAAAgCAKwAEAAICAAABAAAQIERDQQA4EAACAIGAAA=</HashCode>
+      <FileName>App\Pages\ReserveRoom.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.RoomDetails" Collapsed="true">
+    <Position X="19.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ANAEECgSAghACAAICQgAhEAAUCARkoQERAAAQAIkJAA=</HashCode>
+      <FileName>App\Pages\RoomDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.RoomDetailsAddDates" Collapsed="true">
+    <Position X="21.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgABAACABgICCAICAAABEAAQIIRCQQAwkAAgAIGAAA=</HashCode>
+      <FileName>App\Pages\RoomDetailsAddDates.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Pages.RoomReservationDetails" Collapsed="true">
+    <Position X="24" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEUAQEgQAAgAKAICGQAABEAAwAEdgAUAQAAAgIIAAAA=</HashCode>
+      <FileName>App\Pages\RoomReservationDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.Popup.pUserCreation" Collapsed="true">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEACAGBAAAAAAEAABQCIABAEQIAAAACAAAAAAKAgAA=</HashCode>
+      <FileName>App\Popup\pUserCreation.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.UserControl.ucEditDates" Collapsed="true">
+    <Position X="30.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAAAAAAAIAAAAAAAAAAAGEAKAAAQAIkAAAAIAAAA=</HashCode>
+      <FileName>App\UserControl\ucEditDates.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.UserControl.ucFeedback" Collapsed="true">
+    <Position X="32.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAIAABCIQAAAIEAQBACAgEQIAIgQAEwAEIAAAA=</HashCode>
+      <FileName>App\UserControl\ucFeedback.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.App.UserControl.ucLogin" Collapsed="true">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAEQAAAAAAEAIAAAAAAAEAQAAAAACAAAAQoAAgA=</HashCode>
+      <FileName>App\UserControl\ucLogin.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.BasePage.BaseMasterPage" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAA=</HashCode>
+      <FileName>Code\BasePage\BaseMasterPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.BasePage.BasePage" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\BasePage\BasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.BasePage.BaseUserControl" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\BasePage\BaseUserControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.AppointmentObj" Collapsed="true">
+    <Position X="29" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAIAQBDAAACAAIIAAAAgAAAAAAAAAQAAAAgABAAA=</HashCode>
+      <FileName>Code\Classes\AppointmentObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.AppointmentTemporaryObjUtilities" Collapsed="true">
+    <Position X="32.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Classes\AppointmentTemporaryObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.AppointmentTemporaryObj" Collapsed="true">
+    <Position X="30.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAIACAAAAAAAAAAQBAAEgIASgBAAAQBEAAkAAAAA=</HashCode>
+      <FileName>Code\Classes\AppointmentTemporaryObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.CurrentUserObj" Collapsed="true">
+    <Position X="30.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Classes\CurrentUserObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.ImagesObj" Collapsed="true">
+    <Position X="29" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAgAEAAAAAAAAAAAAAAAQAAAAAAAABAAAA=</HashCode>
+      <FileName>Code\Classes\ImageObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.MyAccountMessageClass" Collapsed="true">
+    <Position X="32.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAIAAAAAwAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Code\Classes\MyAccountMessageClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Classes.ReserveRoomTempObject" Collapsed="true">
+    <Position X="36" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAgA=</HashCode>
+      <FileName>Code\Classes\ReserveRoomTempObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.SerializableClasses.BuildingSerialObj" Collapsed="true">
+    <Position X="37.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACIAAAAAAAAAA=</HashCode>
+      <FileName>Code\SerializableClasses\BuildingSerialObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.SerializableClasses.CitySerialObj" Collapsed="true">
+    <Position X="29" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Code\SerializableClasses\CitySerialObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.AppointmentUtilities" Collapsed="true">
+    <Position X="34.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAIgABAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Code\Utilities\AppointmentUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.CurrentUserUtilities" Collapsed="true">
+    <Position X="32.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\CurrentUserUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.EmailUtilities" Collapsed="true">
+    <Position X="36" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAIAAAAAgAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Code\Utilities\EmailUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.JsonHelper" Collapsed="true">
+    <Position X="30.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\JSONHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.RegexUtilities" Collapsed="true">
+    <Position X="34.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\RegexUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.RoomReservationDatesUtilities" Collapsed="true">
+    <Position X="29" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAABAA=</HashCode>
+      <FileName>Code\Utilities\RoomReservationDatesUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.TraceUtilities" Collapsed="true">
+    <Position X="29" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Code\Utilities\TraceUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.Utilities" Collapsed="true">
+    <Position X="30.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgIAAAAAAAAAAAAAAAAIgAAQAAAAQISAA=</HashCode>
+      <FileName>Code\Utilities\Utilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.BuildingUtilities" Collapsed="true">
+    <Position X="39.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAIAAAAAAACAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\DB\BuildingUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.RoomAvailabilityUtilities" Collapsed="true">
+    <Position X="39.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Code\Utilities\DB\RoomAvailabilityUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.RoomCommentsUtilities" Collapsed="true">
+    <Position X="30.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\DB\RoomCommentsUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.RoomReservationUtilities" Collapsed="true">
+    <Position X="34.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\DB\RoomReservationUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.RoomTypeUtilties" Collapsed="true">
+    <Position X="37.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\DB\RoomTypeUtilties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.RoomUtilities" Collapsed="true">
+    <Position X="39.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Code\Utilities\DB\RoomUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.DB.UserUtilities" Collapsed="true">
+    <Position X="29" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAIAAQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAA=</HashCode>
+      <FileName>Code\Utilities\DB\UserUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.EmailTemplates.EmailTemplateUtilities" Collapsed="true">
+    <Position X="34.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\EmailTemplates\EmailTemplateUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.EmailTemplates.RoomReservationEmailUtilities" Collapsed="true">
+    <Position X="30.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAEAQAEAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\EmailTemplates\RoomReservationEmailUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.EmailTemplates.UserEmailUtilities" Collapsed="true">
+    <Position X="37.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Utilities\EmailTemplates\UserEmailUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Code.Utilities.TypeUtilities.FeedbackType" Collapsed="true">
+    <Position X="37.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAABAAAgAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Code\Utilities\TypeUtilities\FeedbackUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.Default" Collapsed="true">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAA=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.Building" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIDMAAKBNRgAQKJQIFIOBwKJCoAQJQgGCAIDAUy8BA=</HashCode>
+      <FileName>Entities\Building.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.Files" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CICCUoGCADQAASLIQClAgBAIBiAEAQAACKAABAAQEBQ=</HashCode>
+      <FileName>Entities\Files.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.Room" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCjGRUBBo0xAcKNQEFBAjgAZigEAIhgDDQhBBR4QBA=</HashCode>
+      <FileName>Entities\Room.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomAvailability" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECECBiIAQBIQKoYBFAABAgNiAgAkAQaCEAIEQWATA=</HashCode>
+      <FileName>Entities\RoomAvailability.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomComments" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAADEgBCEAQAIwqJQBFAABggNCkAAoAACCAAEAQSIDA=</HashCode>
+      <FileName>Entities\RoomComments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomImageLink" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAICEAITIYSCIUKIQBFDABAAFCBAAhAACCAABAYaAVQ=</HashCode>
+      <FileName>Entities\RoomImageLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomImageType" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACMQAAAAQBAQKIQAFAADQABCAAQAAACCABAAAQABA=</HashCode>
+      <FileName>Entities\RoomImageType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomReservation" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CggCGgACEEQQIQKrQBFAABAAVGJAAgABCCAAEAUSxBg=</HashCode>
+      <FileName>Entities\RoomReservation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomReservationComments" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADEgBAEAZAAQbJQAFAABgAJCgAIICQCCAAEAQQIBI=</HashCode>
+      <FileName>Entities\RoomReservationComments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomReservationDates" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACEAACEARAIQboYAFAABAgJiAAIEAQKCEAAEAQgRo=</HashCode>
+      <FileName>Entities\RoomReservationDates.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.RoomType" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACMAAAAAQAAQKIQAFAIBQABCAAQAAACCAACAAQoBA=</HashCode>
+      <FileName>Entities\RoomType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.LinqEntityBase" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABAAAACAIAAAAAAAABiAAAAAAEAAAAAAAAAgA=</HashCode>
+      <FileName>LinqEntityBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Urban.Data.BuildingManager" Collapsed="true">
+    <Position X="36" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAABCEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\BuildingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.FilesManager" Collapsed="true">
+    <Position X="39.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\FilesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomAvailabilityManager" Collapsed="true">
+    <Position X="37.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAgAACEBAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomAvailabilityManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomCommentsManager" Collapsed="true">
+    <Position X="29" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAQAABAAAAABCEBAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomCommentsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomImageLinkManager" Collapsed="true">
+    <Position X="32.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAAAAAgAAAAAAAABAAAAAACEBAAAAAAAACAAIAAA=</HashCode>
+      <FileName>Managers\RoomImageLinkManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomImageTypeManager" Collapsed="true">
+    <Position X="34.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomImageTypeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomManager" Collapsed="true">
+    <Position X="36" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAAAAAgAAAAAACABAAAAAACkAAAAAAAAACAAAABQ=</HashCode>
+      <FileName>Managers\RoomManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomReservationCommentsManager" Collapsed="true">
+    <Position X="37.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAACABAAAAABCEAAAACAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomReservationCommentsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomReservationDatesManager" Collapsed="true">
+    <Position X="39.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAACAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomReservationDatesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomReservationManager" Collapsed="true">
+    <Position X="32.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAACABAAAAAACEBAAAAAgAACAAIAAA=</HashCode>
+      <FileName>Managers\RoomReservationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.RoomTypeManager" Collapsed="true">
+    <Position X="36" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAABAAAAAACEAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Managers\RoomTypeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.UrbanDataManager" Collapsed="true">
+    <Position X="36" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAADDBAAAAAAAAAAEBAAAAAhJAEAA0AyAAIBAAAAAIE=</HashCode>
+      <FileName>Managers\UrbanDataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.UserManager" Collapsed="true">
+    <Position X="39.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAgABAAAAAACEAAAAAAAAACAAACAA=</HashCode>
+      <FileName>Managers\UserManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Urban.Data.UrbanDataContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JBCjAjAggBpwpjAkkhgYGQOwISBIRAC4gCJGEA7AMMs=</HashCode>
+      <FileName>UrbanDataContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UrbanSchedulerProject.Entities.User" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HEUDEkBYADRyAYOIVDFEWBhaDGKBBgRyGSYcIAUScJk=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UrbanSchedulerProject.MasterPages.Popup" Collapsed="true">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAAIAAIAAAAAAAEIAAAAAAAAAAAAAIAAEA=</HashCode>
+      <FileName>MasterPages\Popup.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanSchedulerProject.MasterPages.Site" Collapsed="true">
+    <Position X="2.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAAAACAAAIAAJAAABAAEEIAAAAAAAAEAAAAIAAAA=</HashCode>
+      <FileName>MasterPages\Site.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="UrbanSchedulerProject.Code.Enum.MainTabs" Collapsed="true">
+    <Position X="29" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACEAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Code\Enum\MainTabs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UrbanSchedulerProject.Code.Enum.PosterModeEnum" Collapsed="true">
+    <Position X="30.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Code\Enum\PosterModeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

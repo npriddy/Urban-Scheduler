@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="UrbanSchedulerProject.MasterPages.Site" %>
+
+<%@ Register Src="~/App/UserControl/ucLogin.ascx" TagName="ucLogin" TagPrefix="uc2" %>
+<%@ Register Src="~/App/UserControl/ucFeedback.ascx" TagName="ucFeedback" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Urban Scheduler</title>
+    <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server">
+    </telerik:RadStyleSheetManager>
+    <link rel="Stylesheet" href="~/Theme/StyleSheets/ColorBox/colorbox.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/theme/style.css" />
+    <link rel="Stylesheet" type="text/css" href="~/theme/StyleSheets/Coin-Slider/coin-slider-styles.css" />
+    <link rel="Stylesheet" type="text/css" href="~/Theme/StyleSheets/PrettyPhoto/css/prettyPhoto.css" />
+    <link rel="Stylesheet" type="text/javascript" herf="~/Scripts/jquery.colorbox-min.js" />
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA5_ANucLY49dOgkllRagc6hTYqbWNXEf6OY4MFKPnfilC3tfnFRS7ElFngQeaiZGJzbbjLqlzBhMPxA"
+        type="text/javascript">
+    </script>
+    <script type="text/javascript">
+
+       
+        function redirectToRoomDetails(roomId) {
+            if (roomId !== null && roomId > 0) {
+                document.location= "RoomDetails.aspx?roomId=" + roomId;
+            }
+        }
+        <noscript>Java script is required to use this site.</noscript>
+    
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        <Scripts>
+            <%--Needed for JavaScript IntelliSense in VS2010--%>
+            <%--For VS2008 replace RadScriptManager with ScriptManager--%>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+        </Scripts>
+        <CompositeScript>
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-1.6.4.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.colorbox-min.js" />
+                <asp:ScriptReference Path="~/Scripts/UrbanScheduler.js" />
+                <asp:ScriptReference Path="~/Scripts/coin-slider.min.js" />
+                <asp:ScriptReference Path="~/Theme/StyleSheets/PrettyPhoto/js/jquery.prettyPhoto.js" />
+            </Scripts>
+        </CompositeScript>
+    </telerik:RadScriptManager>
+    <telerik:RadSkinManager ID="RadSkinManager1" runat="server" Skin="Web20">
+    </telerik:RadSkinManager>
+    <div id="header" class="fluid">
+        <div class="container">
+            <div style="float: left; width: 600px;">
+                <img src="/Theme/Images/UrbanSchedulerLogo.png" width="236" height="70" alt="" />
+            </div>
+            <div style="float: left; width: 300px;">
+                <uc2:ucLogin ID="ucLogin1" runat="server" />
+            </div>
+            <telerik:RadTabStrip ID="_rtsMenu" runat="server" Skin="Telerik" Orientation="HorizontalBottom"
+                OnTabClick="_rtsMenu_TabClick" SelectedIndex="0">
+                <Tabs>
+                    <telerik:RadTab Text="Home" Value="Home" Selected="true">
+                    </telerik:RadTab>
+                    <telerik:RadTab Text="Find A Room" Value="FindRoom">
+                    </telerik:RadTab>
+                    <telerik:RadTab Text="Post A Room" Value="PostRoom">
+                    </telerik:RadTab>
+                    <telerik:RadTab Text="My Account" Value="MyAccount">
+                    </telerik:RadTab>
+                </Tabs>
+            </telerik:RadTabStrip>
+        </div>
+    </div>
+    <div id="content" class="fluid">
+        <div class="container">
+            <div>
+                <uc1:ucFeedback ID="ucFeedbackBasePage" runat="server" />
+                <div style="float: left">
+                    <telerik:RadAjaxLoadingPanel ID="_raPnl" Style="float: left" runat="server" IsSticky="true"
+                        Skin="Office2007">
+                    </telerik:RadAjaxLoadingPanel>
+                    <asp:ContentPlaceHolder ID="cMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features" class="fluid">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="cSecondary" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="footer" class="fluid">
+        <div class="container">
+            <p>
+                <a href="http://npriddy.com">Created By Nate Priddy</a></p>
+        </div>
+    </div>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" DefaultLoadingPanelID="_raPnl" runat="server">
+    </telerik:RadAjaxManager>
+    </form>
+</body>
+</html>

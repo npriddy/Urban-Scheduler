@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Popup.master.cs" Inherits="UrbanSchedulerProject.MasterPages.Popup" %>
+<%@ Register Src="~/App/UserControl/ucFeedback.ascx" TagName="ucFeedback" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Urban Scheduler</title>
+    <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server" />
+    <link rel="stylesheet" type="text/css" href="~/theme/style.css" />
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA5_ANucLY49dOgkllRagc6hTYqbWNXEf6OY4MFKPnfilC3tfnFRS7ElFngQeaiZGJzbbjLqlzBhMPxA"
+        type="text/javascript"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA5_ANucLY49dOgkllRagc6hTYqbWNXEf6OY4MFKPnfilC3tfnFRS7ElFngQeaiZGJzbbjLqlzBhMPxA"
+        type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        <Scripts>
+            <%--Needed for JavaScript IntelliSense in VS2010--%>
+            <%--For VS2008 replace RadScriptManager with ScriptManager--%>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+        </Scripts>
+    </telerik:RadScriptManager>
+    <telerik:RadSkinManager ID="RadSkinManager1" runat="server" Skin="Web20">
+    </telerik:RadSkinManager>
+    <uc1:ucFeedback ID="UcFeedbackBasePage" runat="server" />
+    <div id="content" class="fluid">
+        <div class="container">
+            <div>
+                <asp:ContentPlaceHolder ID="cMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+        </telerik:RadAjaxManager>
+    </form>
+</body>
+</html>

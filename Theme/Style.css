@@ -1,0 +1,302 @@
+﻿body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+}
+
+ul
+{
+    list-style:none;
+}
+
+  ul li
+        {
+            padding-bottom: 5px;
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    line-height: 1.6em;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+h1 a{
+    font: 29px normal "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    color: #ccc;
+    text-decoration: none;
+}
+h1 a span { color: #b8ddf0; }
+h1 small{
+    font: 10px normal "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 1.5em;
+    display: block;
+    color: #fff;
+}
+h2 {
+    font-size: 2em;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+a {
+    color: #fff;
+}
+
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.fluid {
+    width: 100%;
+    float: left;
+}
+#header {
+    background: #333;
+    padding-top:5px;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+#header img
+{
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 0px 15px 15px 0;
+    padding: 5px;
+}
+
+.logindiv
+{
+     background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    margin: 10px 15px 15px 0;
+    padding: 5px;
+}
+
+#features {
+    background: #ddd;
+}
+
+ 
+#another_row {
+    background: #888;
+    padding: 5px 0;
+    text-align: center;
+}
+#features .container div {
+    width: 33%;
+    padding: 10px 0;
+    float: left;
+    color: #222;
+}
+#features .container div h2, #features .container div p {
+    padding: 0 20px 0 0;
+}
+#content {
+    background: #fff;
+    color: #000;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+#footer {
+    padding: 20px 0;
+    text-align: center;
+    background:none repeat scroll 0 0 #333333;
+}
+
+
+.HomePostRoom, .HomeFindRoom
+{
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 200px;
+    background-repeat: no-repeat;
+    background-position:100px 100px center;
+ 
+}
+        
+.HomePostRoom
+{
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('Images/magnify_magnifying_search_zoom_magnifier_loupe_find_glass_look_eye.png');
+    height: 80px;
+    
+}
+
+.HomeFindRoom
+{
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('Images/log_out_256.png');
+    height: 80px;
+    
+}
+
+ /*****************************************************************
+							    Warnings
+    *****************************************************************/
+.info, .success, .warning, .error, .validation {
+        border: 1px solid;
+        margin: 0px 0px;
+        margin-bottom: 2px;
+        padding:5px 10px 5px 30px;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+    }
+    .info {
+        color: #00529B;
+        background-color: #BDE5F8;
+        background-image: url('Images/Icons/Information.png');
+    }
+    .success {
+        color: #4F8A10;
+        background-color: #DFF2BF;
+        background-image:url('Images/Icons/Success.png');
+    }
+    .warning {
+        color: #9F6000;
+        background-color: #FEEFB3;
+        background-image: url('Images/Icons/Warning.png');
+    }
+    .error {
+        color: #D8000C;
+        background-color: #FFBABA;
+        background-image: url('Images/Icons/Error.png');
+    }
+
+ /*****************************************************************
+							    Popup Classes
+    *****************************************************************/
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+.myform{
+margin:0 auto !important;
+width:500px !important;
+padding:14px !important;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2 !important;
+background:#ebf4fb!important;
+}
+#stylized h1 {
+font-size:14px !important;
+font-weight:bold !important;
+margin-bottom:8px !important;
+}
+#stylized p{
+font-size:11px !important;
+color:#666666 !important;
+margin-bottom:20px !important;
+border-bottom:solid 1px #b7ddf2 !important;
+padding-bottom:10px !important;
+}
+#stylized label{
+display:block !important;
+font-weight:bold !important;
+text-align:right!important;
+width:140px !important;
+float:left !important;
+}
+#stylized .small{
+color:#666666 !important;
+display:block !important;
+font-size:11px !important;
+font-weight:normal !important;
+text-align:right !important;
+width:140px !important;
+}
+#stylized .inputStyle
+{
+    
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+/* ----------- stylized user login ----------- */
+
+.userLoginForm{
+margin:0 auto !important;
+width:300px !important;
+padding:5px !important;
+}
+#stylizedUserLogin{
+border:solid 2px #b7ddf2 !important;
+background:#ebf4fb!important;
+}
+
+#stylizedUserLogin label{
+display:block !important;
+font-weight:bold !important;
+text-align:right!important;
+width:70px !important;
+float:left !important;
+}
+
+#stylizedUserLogin .inputStyle
+{  
+font-size:12px;
+padding:1px 2px;
+border:solid 1px #aacfe4;
+width:200px !important;
+margin:2px 0 5px 10px;
+}
+
+
+/* ------------------ Table Forms -----------------------*/
+.tableForStyle
+{
+    border:solid 2px #b7ddf2 !important;
+    background:#ebf4fb!important;
+    padding:2px 2px;
+}
+
+.tableForStyle label
+{
+    display:block !important;
+    font-weight:bold !important;
+
+}
+
+.tableForStyleinputStyle
+{  
+    font-size:12px;
+    padding:1px 2px;
+    border:solid 1px #aacfe4;
+    width:200px;
+    margin:2px 0 5px 10px;
+}
+
+.DivStyled
+{
+    border:solid 2px #b7ddf2 !important;
+    background:#ebf4fb!important;
+    padding:10px;
+    width: 940px;
+}
+
+.DivStyled label{
+display:block !important;
+font-weight:bold !important;
+text-align:right!important;
+width:70px !important;
+float:left !important;
+}
+
+.DivStyled .inputStyle
+{
+    font-size:12px;
+padding:1px 2px;
+border:solid 1px #aacfe4;
+width:200px !important;
+margin:2px 0 5px 10px;
+}

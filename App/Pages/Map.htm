@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Google Maps</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA5_ANucLY49dOgkllRagc6hTYqbWNXEf6OY4MFKPnfilC3tfnFRS7ElFngQeaiZGJzbbjLqlzBhMPxA"
+        type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAA5_ANucLY49dOgkllRagc6hTYqbWNXEf6OY4MFKPnfilC3tfnFRS7ElFngQeaiZGJzbbjLqlzBhMPxA"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript">
+
+        /***********************************************************************
+        * getParameterByName
+        * Description: Retrieves string from query key
+        * Parameters:  name - string representing query string key
+        ***********************************************************************/
+        function getParameterByName(name)
+        {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(window.location.href);
+            if (results == null)
+                return "";
+            else
+                return decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        /***********************************************************************
+        * rebindParentAndRedirect
+        * Description: Uses function on parent page to redirect to view room
+        *              information after user clicked from description in info
+        *              window
+        * Parameters:  id - int represents roomId for parent page to redirect to
+        ***********************************************************************/
+        function rebindParentAndRedirect(Id)
+        {
+            if (window.opener !== null)
+            {
+                window.opener.redirectToRoomDetails(Id);
+                window.close();
+            }
+
+        }
+
+        var geocoder; // Object used for geo coding address information
+        var map; //Google maps object
+
+        //Load required libraries for google maps
+        google.load("search", "1");
+        google.load("jquery", "1.4.2");
+        google.load("jqueryui", "1.7.2");
+
+        /***********************************************************************
+        * initialize
+        * Description: Initailizes google map, places it in map_canvas div and
+        *              Precedes to read address information passed in query in
+        *              Json format
+        * Parameters:  None
+        ***********************************************************************/
+        function initialize()
+        {
+            geocoder = new google.maps.Geocoder();
+            var myOptions = {
+                zoom: 12,
+                position: google.maps.LatLng(40.178873, -98.616944),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            codeJSON();
+        }
+
+        /***********************************************************************
+        * codeJSON
+        * Description: Parses querystring JSON and passes address information to
+        *              Process address information function
+        * Parameters:  None
+        ***********************************************************************/
+        function codeJSON()
+        {
+            var addressJson;
+            //If infowindow should start open on page load
+            var infoWindowAutoOpen = getParameterByName("MarkerOpen");
+            //If map should be centered on the use
+            var centerOnUs = getParameterByName("centerOnUs");
+
+            try
+            {
+                //Parsing json mail fail if invalid characters give warning and
+                //close rather than crashing
+                addressJson = jQuery.parseJSON(getParameterByName("address"));
+            }
+            catch (err)
+            {
+                alert("Room information not valid");
+                window.close();
+            }
+
+            //Viewing 1 Address json object array is formatted differently
+            //in each case
+            if (typeof addressJson.length === "undefined")
+            {
+                processAddress(addressJson, infoWindowAutoOpen);
+            }
+            else
+            {
+                //Viewing multiple
+                for (var prop in addressJson)
+                {
+                    //Iterate over each address
+                    processAddress(addressJson[prop], infoWindowAutoOpen);
+                }
+            }
+
+            //Center map on the US and zoom out to appropirate size
+            if (centerOnUs == "True")
+            {
+                map.setCenter(google.maps.LatLng(40.178873, -98.616944));
+                map.setZoom(3);
+            }
+
+        }
+
+        /***********************************************************************
+        * processAddress
+        * Description: 1. Webrequest to google to geocode address information
+        *              2. Create map marker with the geo coded location
+        *              3. Insert content description into info window
+        *              4. If set to auto open then open the infowindow by default
+        *                 Otherwise set onclick event
+        * Parameters:  1. AddressObj - Json array with address and content
+        *              2. infoWindowAutoOepn - Bool used in logic to decide if 
+        *                 info window should be open on page load
+        ***********************************************************************/
+        function processAddress(addressObj, infoWindowAutoOpen)
+        {
+            //Web request for address
+            geocoder.geocode({ 'address': addressObj.Address }, function (results, status)
+            {
+                //Successfull
+                if (status == google.maps.GeocoderStatus.OK)
+                {
+                    //Center map on this location
+                    map.setCenter(results[0].geometry.location);
+
+                    //Create marker at this location
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+
+                    //Constrcut info window
+                    var infowindow = new google.maps.InfoWindow({
+                        content: " "
+                    });
+
+
+                    //Create event to open info window if clicked
+                    google.maps.event.addListener(marker, 'click', function ()
+                    {
+                        infowindow.setContent(addressObj.Content);
+                        infowindow.open(map, marker);
+                    });
+
+                    if (infoWindowAutoOpen === true || infoWindowAutoOpen == "true")
+                    {
+                        infowindow.setContent(addressObj.Content);
+                        infowindow.open(map, marker);
+                    }
+                }
+                else
+                {
+                    //alert("Geocode was not successful for the following reason: " + status);
+                    //Geocode failed to code the address information
+                }
+            });
+        }
+
+    </script>
+</head>
+<body onload="initialize()">
+    <div id="map_canvas" style="width: 950px; height: 800px;">
+    </div>
+</body>
+</html>
